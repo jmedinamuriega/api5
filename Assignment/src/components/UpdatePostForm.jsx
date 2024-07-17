@@ -1,4 +1,4 @@
-// src/components/UpdatePostForm.js
+
 import React, { useState } from 'react';
 import { updatePost } from '../api';
 

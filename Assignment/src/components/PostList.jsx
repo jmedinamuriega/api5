@@ -1,4 +1,4 @@
-// src/components/PostList.js
+
 import React from 'react';
 
 const PostList = ({ posts }) => (

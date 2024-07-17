@@ -1,4 +1,4 @@
-// src/App.js
+
 import React, { useState, useEffect } from 'react';
 import PostList from './components/PostList';
 import CreatePostForm from './components/CreatePostForm';
@@ -16,10 +16,8 @@ const App = () => {
 
   const handlePostCreated = (post) => {
     setPosts(prevPosts => {
-      // Check if the post with the temporary ID already exists
       const existingPostIndex = prevPosts.findIndex(p => p.id === post.id);
       if (existingPostIndex >= 0) {
-        // Replace the temporary post with the actual post
         const updatedPosts = [...prevPosts];
         updatedPosts[existingPostIndex] = post;
         return updatedPosts;

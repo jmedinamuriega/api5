@@ -1,4 +1,4 @@
-// src/components/DeletePostButton.js
+
 import React from 'react';
 import { deletePost } from '../api';
 
